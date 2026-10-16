@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <title>Kalkulator Sederhana</title>
+</head>
+<body>
+    <script>
+        
+        let bil1 = parseFloat(prompt("Masukkan angka 1:"));
+        let bil2 = parseFloat(prompt("Masukkan angka 2:"));
+        let tanda = prompt("Masukkan operator (+, -, *, /)");
+        let hasil;
+
+        if (tanda === "+") {
+            hasil = bil1 + bil2;
+        } else if (tanda === "-") {
+            hasil = bil1 - bil2;
+        } else if (tanda === "*") {
+            hasil = bil1 * bil2;
+        } else if (operator === "/") {
+            if (bil2 !== 0) {
+                hasil = bil1 / bil2;
+            } else {
+                hasil = "Error: Pembagian dengan nol tidak bisa!";
+            }
+        } else {
+            hasil = "Operator tidak valid!";
+        }
+
+        
+        alert("Hasil: " + hasil);
+    </script>
+</body>
+</html>
